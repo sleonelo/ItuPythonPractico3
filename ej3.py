@@ -3,8 +3,7 @@
  Los setters y getters para cada uno de los atributos. Hay que validar las entradas de datos.
  mostrar(): Muestra los datos de la persona.
  esMayorDeEdad(): Devuelve un valor lógico indicando si es mayor de edad"""
-from time import *
- 
+
 class Persona:
     def __init__(self,nombre,edad,dni) -> None:
         self.__nombre=nombre

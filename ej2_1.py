@@ -17,6 +17,7 @@ desicion=int(input("Que operacion queres hacer?\n1)suma\n2)resta\n3)multiplicaci
 num1=int(input("ingrese un numero: "))
 num2=int(input("ingrese otro numero: "))
 operacion=Calculador(num1,num2)
+pepito=Calculador(num1,num2)
 if desicion==1:
     print(operacion.suma())
 if desicion==2:
