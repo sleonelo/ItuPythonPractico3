@@ -10,7 +10,7 @@ class Persona:
         self.__edad=edad
         self.__dni=dni
     # metodos getters    
-    def get_nombre(self):
+    def nombre(self):
         return self.__nombre
     def get_edad(self):
         return self.__edad
@@ -27,7 +27,7 @@ class Persona:
 individuo=Persona("silvio",36,32492649)
 
 def mostrar():
-            print(individuo.get_nombre())
+            print(individuo.nombre())
             print(individuo.get_edad())
             print(f"{individuo.get_dni()}\n")
             
@@ -80,7 +80,7 @@ def menu():
                 except ValueError:print("Debe ingresar un numero!\n")
         
             if desicion2==1:
-                print(individuo.get_nombre())
+                print(individuo.nombre())
             if desicion2==2:
                 print(individuo.get_edad())
             if desicion2==3:

@@ -13,7 +13,7 @@ class Persona():
         self.__dni=dni
     
     #getters
-    def get_nombre(self):
+    def nombre(self):
         return self.__nombre
     def get_edad(self):
         return self.__edad
@@ -31,7 +31,7 @@ class Persona():
         return self.get_edad()>18
     
     def mostrar(self):
-        print(self.get_nombre())
+        print(self.nombre())
         print(self.get_edad())
         print(self.get_dni())
         

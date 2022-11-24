@@ -10,7 +10,7 @@ class Persona():
         self.__dni=dni
         
     #getters
-    def get_nombre(self):
+    def nombre(self):
         return self.__nombre
     def get_edad(self):
         return self.__edad
@@ -25,7 +25,7 @@ class Persona():
         set.__dni=dni
     #mostrar(): Muestra los datos de la persona.
     def mostrar(self):
-        print(self.get_nombre())
+        print(self.nombre())
         print(self.get_edad())   
         print(self.get_dni()) 
     #esMayorDeEdad(): Devuelve un valor lógico indicando si es mayor de edad

@@ -12,7 +12,7 @@ class Cuenta():
      #getters
      def get_titular(self):
          return self.__titular
-     def get_cantidad(self):
+     def cantidad(self):
          return self.__cantidad
     #setters
      def set_titular(self,nombre):
@@ -22,20 +22,20 @@ class Cuenta():
 
 def mostrar():
     print(f"el nombre del titular es: {cliente.get_titular()}")
-    print(f"\nel dinero depositado es: ${cliente.get_cantidad()}\n")
+    print(f"\nel dinero depositado es: ${cliente.cantidad()}\n")
     
 def ingresarDinero(monto):
     if monto<0:
         monto=0
-    nuevoMonto=cliente.get_cantidad()+monto
+    nuevoMonto=cliente.cantidad()+monto
     print(f"\nel dinero en la cuenta ahora es: ${nuevoMonto}\n")
     cliente.set_cantidad(nuevoMonto)
 
 def retirarDinero(montoaretirar):
-    cliente.set_cantidad(cliente.get_cantidad()-montoaretirar)
-    if cliente.get_cantidad()<1000:
+    cliente.set_cantidad(cliente.cantidad()-montoaretirar)
+    if cliente.cantidad()<1000:
         print("la cuenta esta en rojo... ")
-    print(f"el dinero que queda en su cuenta es: ${cliente.get_cantidad()}")
+    print(f"el dinero que queda en su cuenta es: ${cliente.cantidad()}")
 
 
 nombre=input("\nIngrese un nombre: ")
